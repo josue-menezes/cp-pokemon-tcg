@@ -6,6 +6,11 @@ Checkpoint de **Front-End Design Engineering** (FIAP) — Next.js (App Router) +
 
 **https://cp-pokemon-tcg.vercel.app**
 
+## 🔑 Acesso
+
+- **Login:** qualquer nome
+- **Senha:** `123456` (definida na variável de ambiente `APP_PASSWORD`)
+
 ## Integrantes
 
 | Nome | RM |

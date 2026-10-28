@@ -14,6 +14,7 @@ export default function LoginPage() {
         </div>
         <div className="p-8">
           <LoginForm />
+          <p className="mt-4 text-center text-xs text-slate-400">Use qualquer login e a senha de acesso do projeto.</p>
         </div>
       </div>
     </main>
