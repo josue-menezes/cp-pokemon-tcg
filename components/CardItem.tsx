@@ -20,7 +20,6 @@ export default function CardItem({ card }: { card: PokemonSummary }) {
           src={card.images.large}
           alt={`Carta ${card.name}`}
           fill
-          unoptimized
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
           className="rounded-lg object-contain"
         />

@@ -48,7 +48,6 @@ export default async function CardDetailsPage({ params }: { params: Promise<{ id
             src={card.images.large}
             alt={`Carta ${card.name}`}
             fill
-            unoptimized
             priority
             sizes="(max-width: 768px) 100vw, 40vw"
             className="rounded-xl object-contain drop-shadow-xl"
