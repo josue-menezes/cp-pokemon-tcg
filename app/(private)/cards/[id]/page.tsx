@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CardImage from "@/components/CardImage";
 import FavoriteButton from "@/components/FavoriteButton";
 import { ErrorState } from "@/components/States";
 import TypeBadge from "@/components/TypeBadge";
@@ -44,14 +44,7 @@ export default async function CardDetailsPage({ params }: { params: Promise<{ id
 
       <div className="mt-4 grid gap-8 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <div className="relative mx-auto aspect-[245/342] w-full max-w-sm">
-          <Image
-            src={card.images.large}
-            alt={`Carta ${card.name}`}
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 40vw"
-            className="rounded-xl object-contain drop-shadow-xl"
-          />
+          <CardImage images={card.images} name={card.name} sizes="(max-width: 768px) 100vw, 40vw" priority />
         </div>
 
         <div>

@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { formatPokedex } from "@/lib/api";
 import type { PokemonSummary } from "@/types/pokemon";
+import CardImage from "./CardImage";
 import FavoriteButton from "./FavoriteButton";
 import TypeBadge from "./TypeBadge";
 
@@ -16,12 +16,10 @@ export default function CardItem({ card }: { card: PokemonSummary }) {
       </div>
 
       <div className="relative aspect-[245/342] w-full">
-        <Image
-          src={card.images.large}
-          alt={`Carta ${card.name}`}
-          fill
+        <CardImage
+          images={card.images}
+          name={card.name}
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-          className="rounded-lg object-contain"
         />
       </div>
 
